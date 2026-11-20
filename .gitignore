@@ -12,8 +12,14 @@ __pycache__/
 *.log
 _build_check/
 _pipeline_backup_*/
-
-# Raw QUIDA CSVs and third-party material are not redistributed here
-02_Experiments/Current_Phase_Data_Cleaning_and_Baselines/data_raw/
-03_Other/
 ~$*
+
+# The OSF archive is a compressed duplicate of data_raw/ and exceeds GitHub's 100 MB file limit.
+03_Other/Project_Inputs/yjgdv-osfstorage-archive.zip
+
+# Third-party papers and figures are not redistributed in this public repository.
+03_Other/Literature_And_Previous_Stage/Bibliographie_PDF/
+03_Other/Literature_And_Previous_Stage/_imgs/
+
+# Linked dependency folders inside the archived deck builds.
+03_Other/**/node_modules/

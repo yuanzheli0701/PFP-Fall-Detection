@@ -1,0 +1,88 @@
+falls.csv (10, 10) acc index (10, 10)
+
+== 1. Accelerometer: samples, fixed 625 blocks, fall blocks ==
+subject_1: samples=8125 blocks=13 fall_blocks=10 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+subject_2: samples=8125 blocks=13 fall_blocks=10 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+subject_3: samples=8125 blocks=13 fall_blocks=9 [3, 4, 5, 6, 8, 9, 10, 11, 12]
+subject_4: samples=8125 blocks=13 fall_blocks=10 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+subject_5: samples=8125 blocks=13 fall_blocks=10 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+subject_6: samples=8125 blocks=13 fall_blocks=10 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+subject_7: samples=8125 blocks=13 fall_blocks=10 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+subject_8: samples=8125 blocks=13 fall_blocks=10 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+subject_9: samples=8125 blocks=13 fall_blocks=10 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+subject_10: samples=8125 blocks=13 fall_blocks=10 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+TOTAL fall blocks=99  no-fall=31
+
+== 2. Time-gap segmentation (naive) ==
+subject_1: 13 segments, 10 mapped fall windows
+subject_2: 13 segments, 10 mapped fall windows
+subject_3: 13 segments, 9 mapped fall windows
+subject_4: 13 segments, 10 mapped fall windows
+subject_5: 13 segments, 10 mapped fall windows
+subject_6: 13 segments, 10 mapped fall windows
+subject_7: 13 segments, 10 mapped fall windows
+subject_8: 12 segments, 8 mapped fall windows
+subject_9: 13 segments, 10 mapped fall windows
+subject_10: 13 segments, 10 mapped fall windows
+TOTAL segments=129 with fall=97 without=32
+
+== 3. subject_8 timestamp anomalies ==
+most negative jump at sample index 6249: -67.0 s (dt=-66.984s)
+median dt=0.01600 -> 62.50 Hz
+subject_8 index positions per event: [2227, 2721, 3401, 4140, 4622, 6523, 5290, 6041, 7237, 7800]
+blocks: [3, 4, 5, 6, 7, 10, 8, 9, 11, 12]
+falls.csv ts per event: ['1701272904.0', '1701272926.0', '1701272958.0', '1701273008.0', '1701273032.0', '1701273060.0', '1701273092.0', '1701273119.0', '1701273145.0', '1701273166.0']
+acc ts at positions: ['1701272904.6', '1701272926.5', '1701272958.4', '1701273008.2', '1701273033.0', '1701273060.4', '1701273092.6', '1701273119.7', '1701273145.8', '1701273166.8']
+
+== 4. Sync offsets ==
+accelerometer  n=100 median=+0.72 s p90=1.10 s max|dev|=9.03 outliers>2s=[(3, 2, 2498, '-9.03')]
+radar          n=100 median=+0.62 s p90=1.00 s max|dev|=10.01 outliers>2s=[(3, 2, 1221, '10.01')]
+LIDAR          n=100 median=+0.63 s p90=1.00 s max|dev|=10.07 outliers>2s=[(3, 2, 1578, '10.07')]
+ir_camera      n=100 median=+0.34 s p90=0.73 s max|dev|=9.77 outliers>2s=[(3, 2, 391, '9.77')]
+
+== 5. Integrity (NaN / inf) ==
+accelerometer rows=81250 nan=0 inf=0
+LIDAR rows=44226 nan=0 inf=0
+ir_camera rows=11877 nan=0 inf=0
+
+== 6. Radar structure ==
+subject_1: frames=5396 empty=242 max_targets=162 segments=1 freq=8.31 Hz
+subject_2: frames=3767 empty=342 max_targets=166 segments=1 freq=8.32 Hz
+subject_3: frames=4038 empty=183 max_targets=158 segments=2 freq=8.33 Hz
+subject_4: frames=3513 empty=117 max_targets=176 segments=1 freq=8.32 Hz
+subject_5: frames=3707 empty=98 max_targets=164 segments=1 freq=8.33 Hz
+subject_6: frames=3172 empty=71 max_targets=161 segments=1 freq=8.33 Hz
+subject_7: frames=3260 empty=51 max_targets=186 segments=1 freq=8.33 Hz
+subject_8: frames=3127 empty=94 max_targets=170 segments=1 freq=8.33 Hz
+subject_9: frames=2862 empty=48 max_targets=179 segments=1 freq=8.33 Hz
+subject_10: frames=3996 empty=131 max_targets=178 segments=2 freq=8.33 Hz
+TOTAL radar frames=36838 empty=1377 max_targets=186
+
+== 7. Sampling rates per modality (median over subjects) ==
+accelerometer  mean=62.50 Hz  min=62.50  max=62.50
+radar          mean=8.33 Hz  min=8.31  max=8.33
+LIDAR          mean=10.00 Hz  min=10.00  max=10.00
+ir_camera      mean=2.60 Hz  min=2.59  max=2.61
+
+== 8. File sizes (MB per subject) ==
+accelerometer  0.3 - 0.4 MB
+radar          12.6 - 22.3 MB
+LIDAR          6.3 - 10.8 MB
+ir_camera      14.3 - 25.3 MB
+
+== 9. subject_3 / fall 2 detail ==
+event 1 pos 2181 ts=1701266930.90 falls=1701266930.00 off=+0.90 s block=3
+event 2 pos 2498 ts=1701266935.97 falls=1701266945.00 off=-9.03 s block=3
+event 3 pos 2732 ts=1701266982.71 falls=1701266982.00 off=+0.71 s block=4
+event 4 pos 3495 ts=1701267034.92 falls=1701267034.00 off=+0.92 s block=5
+event 5 pos 4166 ts=1701267068.66 falls=1701267068.00 off=+0.66 s block=6
+event 6 pos 5285 ts=1701267128.56 falls=1701267128.00 off=+0.56 s block=8
+event 7 pos 6041 ts=1701267161.66 falls=1701267161.00 off=+0.66 s block=9
+event 8 pos 6686 ts=1701267198.98 falls=1701267198.00 off=+0.98 s block=10
+event 9 pos 7237 ts=1701267230.79 falls=1701267230.00 off=+0.79 s block=11
+event 10 pos 7918 ts=1701267260.69 falls=1701267260.00 off=+0.69 s block=12
+
+== 10. Per-subject acc segments gap check (first gap sizes) ==
+subject_1 gaps (s): ['11.0', '10.0', '89.0', '32.0', '58.0', '64.0', '64.0', '35.0', '24.0', '34.0', '25.0', '32.0'] n=12
+
+DONE

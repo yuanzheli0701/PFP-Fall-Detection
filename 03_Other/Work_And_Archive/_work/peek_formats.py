@@ -1,0 +1,13 @@
+lines = open("data_raw/subject_1/radar.csv").readline().strip()
+print("radar line 1 (truncated):", lines[:120])
+lines2 = open("data_raw/subject_1/LIDAR.csv").readline().strip()
+print("lidar line 1 (truncated):", lines2[:100])
+lines3 = open("data_raw/subject_1/ir_camera.csv").readline().strip()
+print("ir line 1 (truncated):", lines3[:100])
+lines4 = open("data_raw/subject_1/accelerometer.csv").readline().strip()
+print("acc line 1:", lines4)
+import csv
+rows = open("data_raw/accelerometer.csv", newline="").read().strip().splitlines()
+print("index acc row1:", rows[0])
+rowsf = open("data_raw/falls.csv", newline="").read().strip().splitlines()
+print("falls row1:", rowsf[0])
