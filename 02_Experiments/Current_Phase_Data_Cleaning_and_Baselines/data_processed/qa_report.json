@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "counts": {
+    "subjects": 10,
+    "fall_clips": 99,
+    "no_fall_clips": 31,
+    "fall_events": 100,
+    "valid_fall_events": 99,
+    "invalid_fall_events": 1,
+    "four_second_windows": 396,
+    "positive_4s_windows": 99,
+    "negative_4s_windows": 297
+  },
+  "sampling_rates": {
+    "accelerometer": {
+      "mean_hz": 62.499873340386536,
+      "min_hz": 62.499873340386536,
+      "max_hz": 62.499873340386536
+    },
+    "radar": {
+      "mean_hz": 8.325363359837569,
+      "min_hz": 8.309797876935146,
+      "max_hz": 8.333341280626883
+    },
+    "LIDAR": {
+      "mean_hz": 10.000009536752259,
+      "min_hz": 10.000009536752259,
+      "max_hz": 10.000009536752259
+    },
+    "ir_camera": {
+      "mean_hz": 2.6008370858055825,
+      "min_hz": 2.5907477354219233,
+      "max_hz": 2.6055170340258096
+    }
+  },
+  "sync": {
+    "accelerometer": {
+      "median_offset_s": 0.7199999094009399,
+      "p90_abs_offset_s": 1.0967999696731567,
+      "outliers_gt_2s": [
+        {
+          "subject": 3,
+          "event": 2,
+          "offset_s": -9.03
+        }
+      ]
+    },
+    "radar": {
+      "median_offset_s": 0.6160213947296143,
+      "p90_abs_offset_s": 1.002634119987488,
+      "outliers_gt_2s": [
+        {
+          "subject": 3,
+          "event": 2,
+          "offset_s": 10.01
+        }
+      ]
+    },
+    "LIDAR": {
+      "median_offset_s": 0.6345000267028809,
+      "p90_abs_offset_s": 1.004700016975403,
+      "outliers_gt_2s": [
+        {
+          "subject": 3,
+          "event": 2,
+          "offset_s": 10.07
+        }
+      ]
+    },
+    "ir_camera": {
+      "median_offset_s": 0.33531951904296875,
+      "p90_abs_offset_s": 0.7333293199539185,
+      "outliers_gt_2s": [
+        {
+          "subject": 3,
+          "event": 2,
+          "offset_s": 9.77
+        }
+      ]
+    }
+  },
+  "integrity": {
+    "nonfinite_values": {
+      "accelerometer": 0,
+      "radar": 0,
+      "LIDAR": 0,
+      "ir_camera": 0
+    },
+    "radar_raw_frames": 36838,
+    "radar_empty_raw_frames": 1377,
+    "radar_empty_fraction": 0.03737987947228406,
+    "radar_max_targets": 186,
+    "raw_files_modified": false
+  },
+  "radar_frames_per_clip": {
+    "min": 83,
+    "median": 83.0,
+    "max": 84
+  },
+  "radar_frames_per_window": {
+    "min": 26,
+    "median": 33.0,
+    "max": 34
+  },
+  "empty_radar_frames_in_clips": 285,
+  "per_subject_fall_clips": {
+    "subject_1": 10,
+    "subject_2": 10,
+    "subject_3": 9,
+    "subject_4": 10,
+    "subject_5": 10,
+    "subject_6": 10,
+    "subject_7": 10,
+    "subject_8": 10,
+    "subject_9": 10,
+    "subject_10": 10
+  },
+  "per_subject_windows": {
+    "subject_1": {
+      "fall": 10,
+      "no_fall": 30
+    },
+    "subject_2": {
+      "fall": 10,
+      "no_fall": 30
+    },
+    "subject_3": {
+      "fall": 9,
+      "no_fall": 27
+    },
+    "subject_4": {
+      "fall": 10,
+      "no_fall": 30
+    },
+    "subject_5": {
+      "fall": 10,
+      "no_fall": 30
+    },
+    "subject_6": {
+      "fall": 10,
+      "no_fall": 30
+    },
+    "subject_7": {
+      "fall": 10,
+      "no_fall": 30
+    },
+    "subject_8": {
+      "fall": 10,
+      "no_fall": 30
+    },
+    "subject_9": {
+      "fall": 10,
+      "no_fall": 30
+    },
+    "subject_10": {
+      "fall": 10,
+      "no_fall": 30
+    }
+  }
+}

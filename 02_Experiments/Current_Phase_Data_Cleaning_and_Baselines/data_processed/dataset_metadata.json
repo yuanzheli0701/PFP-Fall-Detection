@@ -1,0 +1,583 @@
+{
+  "dataset": "QUIDA",
+  "version": "1.0",
+  "created_utc": "2026-11-20T08:18:03.211652+00:00",
+  "clip_definition": {
+    "samples": 625,
+    "duration_s": 10.0,
+    "clips_per_subject": 13,
+    "total_clips": 130,
+    "rule": "positive when an accelerometer index belongs to the fixed 625-sample block"
+  },
+  "counts": {
+    "subjects": 10,
+    "fall_clips": 99,
+    "no_fall_clips": 31,
+    "fall_events": 100,
+    "valid_fall_events": 99,
+    "invalid_fall_events": 1,
+    "four_second_windows": 396,
+    "positive_4s_windows": 99,
+    "negative_4s_windows": 297
+  },
+  "sampling_rates": {
+    "accelerometer": {
+      "mean_hz": 62.499873340386536,
+      "min_hz": 62.499873340386536,
+      "max_hz": 62.499873340386536
+    },
+    "radar": {
+      "mean_hz": 8.325363359837569,
+      "min_hz": 8.309797876935146,
+      "max_hz": 8.333341280626883
+    },
+    "LIDAR": {
+      "mean_hz": 10.000009536752259,
+      "min_hz": 10.000009536752259,
+      "max_hz": 10.000009536752259
+    },
+    "ir_camera": {
+      "mean_hz": 2.6008370858055825,
+      "min_hz": 2.5907477354219233,
+      "max_hz": 2.6055170340258096
+    }
+  },
+  "sync": {
+    "accelerometer": {
+      "median_offset_s": 0.7199999094009399,
+      "p90_abs_offset_s": 1.0967999696731567,
+      "outliers_gt_2s": [
+        {
+          "subject": 3,
+          "event": 2,
+          "offset_s": -9.03
+        }
+      ]
+    },
+    "radar": {
+      "median_offset_s": 0.6160213947296143,
+      "p90_abs_offset_s": 1.002634119987488,
+      "outliers_gt_2s": [
+        {
+          "subject": 3,
+          "event": 2,
+          "offset_s": 10.01
+        }
+      ]
+    },
+    "LIDAR": {
+      "median_offset_s": 0.6345000267028809,
+      "p90_abs_offset_s": 1.004700016975403,
+      "outliers_gt_2s": [
+        {
+          "subject": 3,
+          "event": 2,
+          "offset_s": 10.07
+        }
+      ]
+    },
+    "ir_camera": {
+      "median_offset_s": 0.33531951904296875,
+      "p90_abs_offset_s": 0.7333293199539185,
+      "outliers_gt_2s": [
+        {
+          "subject": 3,
+          "event": 2,
+          "offset_s": 9.77
+        }
+      ]
+    }
+  },
+  "integrity": {
+    "nonfinite_values": {
+      "accelerometer": 0,
+      "radar": 0,
+      "LIDAR": 0,
+      "ir_camera": 0
+    },
+    "radar_raw_frames": 36838,
+    "radar_empty_raw_frames": 1377,
+    "radar_empty_fraction": 0.03737987947228406,
+    "radar_max_targets": 186,
+    "raw_files_modified": false
+  },
+  "per_subject": {
+    "subject_1": {
+      "accelerometer_samples": 8125,
+      "timestamp_monotonic": true,
+      "number_of_timestamp_jumps": 12,
+      "largest_abs_jump_s": 89.01600003242493,
+      "radar_frames": 5396,
+      "radar_empty_frames": 242,
+      "radar_max_targets": 162,
+      "radar_empty_frames_in_clips": 58,
+      "lidar_frames": 6336,
+      "ir_frames": 1785,
+      "fall_clips": 10,
+      "coverage_min": {
+        "accelerometer": 625,
+        "radar": 83,
+        "LIDAR": 99,
+        "ir_camera": 26
+      },
+      "coverage_max": {
+        "accelerometer": 625,
+        "radar": 83,
+        "LIDAR": 100,
+        "ir_camera": 30
+      }
+    },
+    "subject_2": {
+      "accelerometer_samples": 8125,
+      "timestamp_monotonic": true,
+      "number_of_timestamp_jumps": 12,
+      "largest_abs_jump_s": 31.016000032424927,
+      "radar_frames": 3767,
+      "radar_empty_frames": 342,
+      "radar_max_targets": 166,
+      "radar_empty_frames_in_clips": 91,
+      "lidar_frames": 4296,
+      "ir_frames": 1142,
+      "fall_clips": 10,
+      "coverage_min": {
+        "accelerometer": 625,
+        "radar": 83,
+        "LIDAR": 100,
+        "ir_camera": 25
+      },
+      "coverage_max": {
+        "accelerometer": 625,
+        "radar": 84,
+        "LIDAR": 100,
+        "ir_camera": 32
+      }
+    },
+    "subject_3": {
+      "accelerometer_samples": 8125,
+      "timestamp_monotonic": true,
+      "number_of_timestamp_jumps": 12,
+      "largest_abs_jump_s": 52.01600003242493,
+      "radar_frames": 4038,
+      "radar_empty_frames": 183,
+      "radar_max_targets": 158,
+      "radar_empty_frames_in_clips": 26,
+      "lidar_frames": 4926,
+      "ir_frames": 1272,
+      "fall_clips": 9,
+      "coverage_min": {
+        "accelerometer": 625,
+        "radar": 83,
+        "LIDAR": 100,
+        "ir_camera": 24
+      },
+      "coverage_max": {
+        "accelerometer": 625,
+        "radar": 84,
+        "LIDAR": 100,
+        "ir_camera": 28
+      }
+    },
+    "subject_4": {
+      "accelerometer_samples": 8125,
+      "timestamp_monotonic": true,
+      "number_of_timestamp_jumps": 12,
+      "largest_abs_jump_s": 38.01600003242493,
+      "radar_frames": 3513,
+      "radar_empty_frames": 117,
+      "radar_max_targets": 176,
+      "radar_empty_frames_in_clips": 40,
+      "lidar_frames": 4230,
+      "ir_frames": 1093,
+      "fall_clips": 10,
+      "coverage_min": {
+        "accelerometer": 625,
+        "radar": 83,
+        "LIDAR": 99,
+        "ir_camera": 25
+      },
+      "coverage_max": {
+        "accelerometer": 625,
+        "radar": 84,
+        "LIDAR": 100,
+        "ir_camera": 28
+      }
+    },
+    "subject_5": {
+      "accelerometer_samples": 8125,
+      "timestamp_monotonic": true,
+      "number_of_timestamp_jumps": 12,
+      "largest_abs_jump_s": 37.01600003242493,
+      "radar_frames": 3707,
+      "radar_empty_frames": 98,
+      "radar_max_targets": 164,
+      "radar_empty_frames_in_clips": 3,
+      "lidar_frames": 4120,
+      "ir_frames": 1100,
+      "fall_clips": 10,
+      "coverage_min": {
+        "accelerometer": 625,
+        "radar": 83,
+        "LIDAR": 99,
+        "ir_camera": 26
+      },
+      "coverage_max": {
+        "accelerometer": 625,
+        "radar": 84,
+        "LIDAR": 100,
+        "ir_camera": 30
+      }
+    },
+    "subject_6": {
+      "accelerometer_samples": 8125,
+      "timestamp_monotonic": true,
+      "number_of_timestamp_jumps": 12,
+      "largest_abs_jump_s": 38.01600003242493,
+      "radar_frames": 3172,
+      "radar_empty_frames": 71,
+      "radar_max_targets": 161,
+      "radar_empty_frames_in_clips": 15,
+      "lidar_frames": 3952,
+      "ir_frames": 1081,
+      "fall_clips": 10,
+      "coverage_min": {
+        "accelerometer": 625,
+        "radar": 83,
+        "LIDAR": 99,
+        "ir_camera": 25
+      },
+      "coverage_max": {
+        "accelerometer": 625,
+        "radar": 84,
+        "LIDAR": 100,
+        "ir_camera": 28
+      }
+    },
+    "subject_7": {
+      "accelerometer_samples": 8125,
+      "timestamp_monotonic": true,
+      "number_of_timestamp_jumps": 12,
+      "largest_abs_jump_s": 40.01600003242493,
+      "radar_frames": 3260,
+      "radar_empty_frames": 51,
+      "radar_max_targets": 186,
+      "radar_empty_frames_in_clips": 8,
+      "lidar_frames": 3929,
+      "ir_frames": 1036,
+      "fall_clips": 10,
+      "coverage_min": {
+        "accelerometer": 625,
+        "radar": 83,
+        "LIDAR": 99,
+        "ir_camera": 26
+      },
+      "coverage_max": {
+        "accelerometer": 625,
+        "radar": 84,
+        "LIDAR": 100,
+        "ir_camera": 28
+      }
+    },
+    "subject_8": {
+      "accelerometer_samples": 8125,
+      "timestamp_monotonic": false,
+      "number_of_timestamp_jumps": 12,
+      "largest_abs_jump_s": 74.01600003242493,
+      "radar_frames": 3127,
+      "radar_empty_frames": 94,
+      "radar_max_targets": 170,
+      "radar_empty_frames_in_clips": 20,
+      "lidar_frames": 3741,
+      "ir_frames": 1012,
+      "fall_clips": 10,
+      "coverage_min": {
+        "accelerometer": 625,
+        "radar": 83,
+        "LIDAR": 100,
+        "ir_camera": 26
+      },
+      "coverage_max": {
+        "accelerometer": 625,
+        "radar": 84,
+        "LIDAR": 100,
+        "ir_camera": 28
+      }
+    },
+    "subject_9": {
+      "accelerometer_samples": 8125,
+      "timestamp_monotonic": true,
+      "number_of_timestamp_jumps": 12,
+      "largest_abs_jump_s": 28.016000032424927,
+      "radar_frames": 2862,
+      "radar_empty_frames": 48,
+      "radar_max_targets": 179,
+      "radar_empty_frames_in_clips": 4,
+      "lidar_frames": 3665,
+      "ir_frames": 1039,
+      "fall_clips": 10,
+      "coverage_min": {
+        "accelerometer": 625,
+        "radar": 83,
+        "LIDAR": 99,
+        "ir_camera": 26
+      },
+      "coverage_max": {
+        "accelerometer": 625,
+        "radar": 84,
+        "LIDAR": 100,
+        "ir_camera": 30
+      }
+    },
+    "subject_10": {
+      "accelerometer_samples": 8125,
+      "timestamp_monotonic": true,
+      "number_of_timestamp_jumps": 12,
+      "largest_abs_jump_s": 66.01600003242493,
+      "radar_frames": 3996,
+      "radar_empty_frames": 131,
+      "radar_max_targets": 178,
+      "radar_empty_frames_in_clips": 20,
+      "lidar_frames": 5031,
+      "ir_frames": 1317,
+      "fall_clips": 10,
+      "coverage_min": {
+        "accelerometer": 625,
+        "radar": 83,
+        "LIDAR": 99,
+        "ir_camera": 25
+      },
+      "coverage_max": {
+        "accelerometer": 625,
+        "radar": 84,
+        "LIDAR": 100,
+        "ir_camera": 29
+      }
+    }
+  },
+  "radar_features": [
+    "target_count",
+    "centroid_x",
+    "centroid_y",
+    "centroid_z",
+    "std_x",
+    "std_y",
+    "std_z",
+    "z_min",
+    "z_max",
+    "z_range",
+    "range_mean",
+    "range_min",
+    "range_max",
+    "doppler_mean",
+    "doppler_abs_mean",
+    "doppler_min",
+    "doppler_max",
+    "doppler_std",
+    "doppler_abs_max",
+    "snr_mean",
+    "snr_std",
+    "empty_frame"
+  ],
+  "lidar_columns": {
+    "ambient_kcps": [
+      0,
+      64
+    ],
+    "target_present": [
+      64,
+      128
+    ],
+    "active_spads": [
+      128,
+      192
+    ],
+    "photon_count_kcps": [
+      192,
+      256
+    ],
+    "distance_std_m": [
+      256,
+      320
+    ],
+    "distance_m": [
+      320,
+      384
+    ],
+    "status": [
+      384,
+      448
+    ],
+    "reflectance_pct": [
+      448,
+      512
+    ]
+  },
+  "arrays": {
+    "quida_clean.npz": {
+      "acc": {
+        "shape": [
+          130,
+          625,
+          3
+        ],
+        "dtype": "float32"
+      },
+      "acc_times": {
+        "shape": [
+          130,
+          625
+        ],
+        "dtype": "float32"
+      },
+      "radar": {
+        "shape": [
+          130,
+          90,
+          22
+        ],
+        "dtype": "float32"
+      },
+      "radar_mask": {
+        "shape": [
+          130,
+          90
+        ],
+        "dtype": "bool"
+      },
+      "radar_times": {
+        "shape": [
+          130,
+          90
+        ],
+        "dtype": "float32"
+      },
+      "lidar": {
+        "shape": [
+          130,
+          105,
+          512
+        ],
+        "dtype": "float32"
+      },
+      "lidar_mask": {
+        "shape": [
+          130,
+          105
+        ],
+        "dtype": "bool"
+      },
+      "lidar_times": {
+        "shape": [
+          130,
+          105
+        ],
+        "dtype": "float32"
+      },
+      "ir": {
+        "shape": [
+          130,
+          40,
+          768
+        ],
+        "dtype": "float32"
+      },
+      "ir_mask": {
+        "shape": [
+          130,
+          40
+        ],
+        "dtype": "bool"
+      },
+      "ir_times": {
+        "shape": [
+          130,
+          40
+        ],
+        "dtype": "float32"
+      },
+      "label": {
+        "shape": [
+          130
+        ],
+        "dtype": "int8"
+      },
+      "fall_event_ids": {
+        "shape": [
+          130,
+          10
+        ],
+        "dtype": "bool"
+      },
+      "event_valid": {
+        "shape": [
+          10,
+          10
+        ],
+        "dtype": "bool"
+      },
+      "sync_offsets": {
+        "shape": [
+          10,
+          10,
+          4
+        ],
+        "dtype": "float64"
+      }
+    },
+    "quida_windows_4s.npz": {
+      "acc": {
+        "shape": [
+          396,
+          250,
+          3
+        ],
+        "dtype": "float32"
+      },
+      "radar": {
+        "shape": [
+          396,
+          42,
+          22
+        ],
+        "dtype": "float32"
+      },
+      "radar_mask": {
+        "shape": [
+          396,
+          42
+        ],
+        "dtype": "bool"
+      },
+      "label": {
+        "shape": [
+          396
+        ],
+        "dtype": "int8"
+      }
+    },
+    "splits_loso.npz": {
+      "folds": 10,
+      "rule": "test_subject=f; train_subject_matrix contains the other nine subjects",
+      "stats": "mean/std computed only from training subjects for each fold"
+    }
+  },
+  "decisions": {
+    "segmentation": "fixed 625-sample blocks, never time-gap splitting",
+    "subject_8": "clips 9-11 are chronologically out of order; fixed blocks preserve them and labels come from the index matrix",
+    "subject_3_event_2": "excluded from event-level windows; clip 4 remains positive because it contains valid event 1",
+    "subject_3_clip_8": "kept as no-fall with review_flag; not silently relabelled",
+    "radar": "empty detection frames are retained, with target_count=0 and empty_frame=1",
+    "normalisation": "apply only the statistics belonging to the training fold"
+  },
+  "excluded_events": [
+    {
+      "subject": 3,
+      "event": 2,
+      "reason": "four sensor indices disagree with falls.csv by about 10 s"
+    }
+  ],
+  "reproduce": [
+    "D:\\Anaconda\\python.exe code\\build_clean_dataset.py --overwrite",
+    "D:\\Anaconda\\python.exe code\\verify_clean_dataset.py",
+    "D:\\Anaconda\\python.exe code\\train_preliminary_baselines.py"
+  ]
+}

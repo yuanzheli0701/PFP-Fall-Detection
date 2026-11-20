@@ -1,0 +1,20 @@
+{
+  "files": {
+    "quida_clean.npz": {
+      "bytes": 13963415,
+      "sha256": "21ceac1499dd4625de18c6fcd5ae7782da84171bc051009e0c31b9ad81340c41"
+    },
+    "quida_windows_4s.npz": {
+      "bytes": 755945,
+      "sha256": "923dcb7b6dfa75c50ffb823defb9295e0cbdcbc4e71474d240a64f0c67e48cbf"
+    },
+    "splits_loso.npz": {
+      "bytes": 106695,
+      "sha256": "1c25b58b5a111fcf6a656f450f41fb9b68f502ff19df45057dd14401905cf6e4"
+    },
+    "dataset_metadata.json": {
+      "bytes": 13889,
+      "sha256": "16418d82aef81025e392e619ce4ca027e746a931c1c2a415f4221f00bdfe1f61"
+    }
+  }
+}

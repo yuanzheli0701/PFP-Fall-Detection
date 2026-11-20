@@ -1,0 +1,19 @@
+# Python / local environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# IDE: keep the shared PyCharm run configurations, ignore user state
+.idea/*
+!.idea/runConfigurations/
+!.idea/runConfigurations/*.xml
+
+# Logs and temporary verification folders
+*.log
+_build_check/
+_pipeline_backup_*/
+
+# Raw QUIDA CSVs and third-party material are not redistributed here
+02_Experiments/Current_Phase_Data_Cleaning_and_Baselines/data_raw/
+03_Other/
+~$*

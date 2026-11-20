@@ -1,0 +1,425 @@
+{
+  "epochs": 45,
+  "seed": 2026,
+  "protocol": "leave-one-subject-out",
+  "models": {
+    "acc_cnn": {
+      "pooled": {
+        "n": 396,
+        "tn": 287,
+        "fp": 10,
+        "fn": 0,
+        "tp": 99,
+        "accuracy": 0.9747474747474747,
+        "precision": 0.908256880733945,
+        "recall": 1.0,
+        "specificity": 0.9663299663299664,
+        "f1": 0.9519230769230769,
+        "balanced_accuracy": 0.9831649831649831,
+        "auroc": 0.9949324898819848
+      },
+      "per_subject_macro": {
+        "accuracy": {
+          "mean": 0.9736111111111111,
+          "std": 0.043819389417116335
+        },
+        "precision": {
+          "mean": 0.9230269730269729,
+          "std": 0.11750996344307024
+        },
+        "recall": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "specificity": {
+          "mean": 0.9648148148148149,
+          "std": 0.05842585255615516
+        },
+        "f1": {
+          "mean": 0.9556935817805383,
+          "std": 0.07012615215320073
+        },
+        "balanced_accuracy": {
+          "mean": 0.9824074074074074,
+          "std": 0.02921292627807757
+        },
+        "auroc": {
+          "mean": 0.9963744855967078,
+          "std": 0.009815870740621348
+        }
+      },
+      "mean_train_seconds": 6.909803759997885,
+      "fold_metrics": [
+        {
+          "fold": 1,
+          "test_subject": 1,
+          "n": 40,
+          "tn": 29,
+          "fp": 1,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 0.975,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "specificity": 0.9666666666666667,
+          "f1": 0.9523809523809523,
+          "balanced_accuracy": 0.9833333333333334,
+          "auroc": 1.0
+        },
+        {
+          "fold": 2,
+          "test_subject": 2,
+          "n": 40,
+          "tn": 29,
+          "fp": 1,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 0.975,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "specificity": 0.9666666666666667,
+          "f1": 0.9523809523809523,
+          "balanced_accuracy": 0.9833333333333334,
+          "auroc": 1.0
+        },
+        {
+          "fold": 3,
+          "test_subject": 3,
+          "n": 36,
+          "tn": 22,
+          "fp": 5,
+          "fn": 0,
+          "tp": 9,
+          "accuracy": 0.8611111111111112,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "specificity": 0.8148148148148148,
+          "f1": 0.782608695652174,
+          "balanced_accuracy": 0.9074074074074074,
+          "auroc": 0.9670781893004115
+        },
+        {
+          "fold": 4,
+          "test_subject": 4,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        },
+        {
+          "fold": 5,
+          "test_subject": 5,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        },
+        {
+          "fold": 6,
+          "test_subject": 6,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        },
+        {
+          "fold": 7,
+          "test_subject": 7,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        },
+        {
+          "fold": 8,
+          "test_subject": 8,
+          "n": 40,
+          "tn": 27,
+          "fp": 3,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 0.925,
+          "precision": 0.7692307692307693,
+          "recall": 1.0,
+          "specificity": 0.9,
+          "f1": 0.8695652173913044,
+          "balanced_accuracy": 0.95,
+          "auroc": 0.9966666666666667
+        },
+        {
+          "fold": 9,
+          "test_subject": 9,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        },
+        {
+          "fold": 10,
+          "test_subject": 10,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        }
+      ]
+    },
+    "radar_lstm": {
+      "pooled": {
+        "n": 396,
+        "tn": 288,
+        "fp": 9,
+        "fn": 2,
+        "tp": 97,
+        "accuracy": 0.9722222222222222,
+        "precision": 0.9150943396226415,
+        "recall": 0.9797979797979798,
+        "specificity": 0.9696969696969697,
+        "f1": 0.9463414634146342,
+        "balanced_accuracy": 0.9747474747474747,
+        "auroc": 0.9882324932829983
+      },
+      "per_subject_macro": {
+        "accuracy": {
+          "mean": 0.971111111111111,
+          "std": 0.04437842318564781
+        },
+        "precision": {
+          "mean": 0.932117882117882,
+          "std": 0.11957846871669062
+        },
+        "recall": {
+          "mean": 0.9800000000000001,
+          "std": 0.05999999999999999
+        },
+        "specificity": {
+          "mean": 0.9681481481481482,
+          "std": 0.05937950762616617
+        },
+        "f1": {
+          "mean": 0.949344375431332,
+          "std": 0.07295583693187212
+        },
+        "balanced_accuracy": {
+          "mean": 0.9740740740740741,
+          "std": 0.038248698840130005
+        },
+        "auroc": {
+          "mean": 0.9935720164609053,
+          "std": 0.017177112478842474
+        }
+      },
+      "mean_train_seconds": 14.321719119999035,
+      "fold_metrics": [
+        {
+          "fold": 1,
+          "test_subject": 1,
+          "n": 40,
+          "tn": 29,
+          "fp": 1,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 0.975,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "specificity": 0.9666666666666667,
+          "f1": 0.9523809523809523,
+          "balanced_accuracy": 0.9833333333333334,
+          "auroc": 1.0
+        },
+        {
+          "fold": 2,
+          "test_subject": 2,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 2,
+          "tp": 8,
+          "accuracy": 0.95,
+          "precision": 1.0,
+          "recall": 0.8,
+          "specificity": 1.0,
+          "f1": 0.888888888888889,
+          "balanced_accuracy": 0.9,
+          "auroc": 0.9933333333333334
+        },
+        {
+          "fold": 3,
+          "test_subject": 3,
+          "n": 36,
+          "tn": 22,
+          "fp": 5,
+          "fn": 0,
+          "tp": 9,
+          "accuracy": 0.8611111111111112,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "specificity": 0.8148148148148148,
+          "f1": 0.782608695652174,
+          "balanced_accuracy": 0.9074074074074074,
+          "auroc": 0.9423868312757202
+        },
+        {
+          "fold": 4,
+          "test_subject": 4,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        },
+        {
+          "fold": 5,
+          "test_subject": 5,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        },
+        {
+          "fold": 6,
+          "test_subject": 6,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        },
+        {
+          "fold": 7,
+          "test_subject": 7,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        },
+        {
+          "fold": 8,
+          "test_subject": 8,
+          "n": 40,
+          "tn": 27,
+          "fp": 3,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 0.925,
+          "precision": 0.7692307692307693,
+          "recall": 1.0,
+          "specificity": 0.9,
+          "f1": 0.8695652173913044,
+          "balanced_accuracy": 0.95,
+          "auroc": 1.0
+        },
+        {
+          "fold": 9,
+          "test_subject": 9,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        },
+        {
+          "fold": 10,
+          "test_subject": 10,
+          "n": 40,
+          "tn": 30,
+          "fp": 0,
+          "fn": 0,
+          "tp": 10,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "specificity": 1.0,
+          "f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "auroc": 1.0
+        }
+      ]
+    }
+  }
+}
